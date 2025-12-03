@@ -1,0 +1,23 @@
+{
+  "name": "projeto-web-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i app.css -o public/output.css",
+    "watch:css": "npx @tailwindcss/cli -i app.css -o public/output.css --watch",
+    "serve": "npx serve .",
+    "dev": "npx concurrently \"npm run watch:css\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^5.4.7"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido Confirmado - DevFarma</title>
+    <link rel="icon" type="image/png" href="./public/images/logo.png" />
+    <link href="./public/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-base-200">
+    <div class="navbar bg-base-100 shadow-sm min-h-16">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
+          <div class="avatar">
+            <div class="w-10 rounded-full">
+              <img src="./public/images/logo.png" alt="DevFarma Logo" />
+            </div>
+          </div>
+          <span class="font-bold text-xl text-success hidden sm:inline">DevFarma</span>
+        </a>
+        <ul class="steps steps-horizontal hidden sm:flex">
+          <li class="step step-success">Carrinho</li>
+          <li class="step step-success">Checkout</li>
+          <li class="step step-success">Confirmação</li>
+        </ul>
+        <div class="w-10 flex-shrink-0"></div>
+      </div>
+    </div>
+
+    <section class="container mx-auto px-4 py-12">
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-base-100 rounded-lg shadow-xl p-8 text-center">
+          <div class="w-24 h-24 bg-success rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-success-content" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+
+          <h1 class="text-3xl font-bold text-success mb-2">Pedido Realizado com Sucesso!</h1>
+          <p class="text-lg text-base-content/70 mb-6">Obrigado por comprar na DevFarma</p>
+
+          <div class="alert bg-base-200 mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-info" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <div class="text-left">
+              <p class="font-medium">Confirmação enviada por e-mail</p>
+              <p class="text-sm text-base-content/70">Um recibo foi enviado para joao@email.com</p>
+            </div>
+          </div>
+
+          <div class="bg-base-200 rounded-lg p-6 mb-6 text-left">
+            <div class="flex justify-between items-center mb-4">
+              <h2 class="font-bold text-lg">Detalhes do Pedido</h2>
+              <span class="badge badge-success badge-lg">Pedido #12345</span>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex gap-3">
+                <div class="w-16 h-16 bg-base-100 rounded-lg flex-shrink-0 p-1">
+                  <img src="./public/images/products/vitaminac.jpg" alt="Vitamina C" class="w-full h-full object-contain rounded-lg" />
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium">Vitamina C 1000mg</p>
+                  <p class="text-sm text-base-content/70">Qtd: 2</p>
+                </div>
+                <span class="font-bold">R$ 99,80</span>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-16 h-16 bg-base-100 rounded-lg flex-shrink-0 p-1">
+                  <img src="./public/images/products/protetorsolar.jpg" alt="Protetor Solar" class="w-full h-full object-contain rounded-lg" />
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium">Protetor Solar FPS 50</p>
+                  <p class="text-sm text-base-content/70">Qtd: 1</p>
+                </div>
+                <span class="font-bold">R$ 79,90</span>
+              </div>
+              <div class="flex gap-3">
+                <div class="w-16 h-16 bg-base-100 rounded-lg flex-shrink-0 p-1">
+                  <img src="./public/images/products/dipirona.jpeg" alt="Dipirona" class="w-full h-full object-contain rounded-lg" />
+                </div>
+                <div class="flex-1">
+                  <p class="font-medium">Dipirona 500mg</p>
+                  <p class="text-sm text-base-content/70">Qtd: 1</p>
+                </div>
+                <span class="font-bold">R$ 12,90</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm">
+                <span class="text-base-content/70">Subtotal</span>
+                <span>R$ 192,60</span>
+              </div>
+              <div class="flex justify-between text-sm text-success">
+                <span>Descontos</span>
+                <span>- R$ 20,00</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span class="text-base-content/70">Frete</span>
+                <span class="text-success">Grátis</span>
+              </div>
+              <div class="divider my-2"></div>
+              <div class="flex justify-between font-bold text-lg">
+                <span>Total</span>
+                <span class="text-success">R$ 172,60</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 text-left">
+            <div class="bg-base-200 rounded-lg p-4">
+              <h3 class="font-medium mb-2 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Endereço de Entrega
+              </h3>
+              <p class="text-sm text-base-content/70">
+                João da Silva<br />
+                Av. Paulista, 1000 - Apto 101<br />
+                Bela Vista, São Paulo - SP<br />
+                CEP: 01310-100
+              </p>
+            </div>
+            <div class="bg-base-200 rounded-lg p-4">
+              <h3 class="font-medium mb-2 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Previsão de Entrega
+              </h3>
+              <p class="text-sm text-base-content/70">
+                3 a 5 dias úteis<br />
+                <span class="text-success font-medium">Entrega Gratuita</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="index.html" class="btn btn-success btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+              Voltar à Loja
+            </a>
+            <button class="btn btn-outline btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+              </svg>
+              Imprimir Recibo
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-base-100 rounded-lg shadow-xl p-6 mt-6">
+          <h3 class="font-bold text-lg mb-4">Acompanhe seu Pedido</h3>
+          <ul class="steps steps-vertical w-full">
+            <li class="step step-success">
+              <div class="text-left">
+                <p class="font-medium">Pedido Confirmado</p>
+                <p class="text-sm text-base-content/70">27/11/2024 - 14:30</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="text-left">
+                <p class="font-medium">Pagamento Aprovado</p>
+                <p class="text-sm text-base-content/70">Aguardando confirmação</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="text-left">
+                <p class="font-medium">Em Separação</p>
+                <p class="text-sm text-base-content/70">-</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="text-left">
+                <p class="font-medium">Enviado</p>
+                <p class="text-sm text-base-content/70">-</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="text-left">
+                <p class="font-medium">Entregue</p>
+                <p class="text-sm text-base-content/70">-</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center mt-8">
+          <p class="text-base-content/70 mb-2">Precisa de ajuda?</p>
+          <a href="#" class="link link-success">Entre em contato com nosso suporte</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-neutral text-neutral-content mt-8">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex items-center gap-2">
+            <div class="avatar">
+              <div class="w-8 rounded-full">
+                <img src="./public/images/logo.png" alt="DevFarma Logo" />
+              </div>
+            </div>
+            <span class="font-bold">DevFarma</span>
+          </div>
+          <p class="text-sm text-neutral-content/70">© 2024 DevFarma. Todos os direitos reservados.</p>
+          <div class="flex gap-4 text-sm">
+            <a href="#" class="link link-hover">Termos</a>
+            <a href="#" class="link link-hover">Privacidade</a>
+            <a href="#" class="link link-hover">Ajuda</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

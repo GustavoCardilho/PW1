@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos - DevFarma</title>
+    <link rel="icon" type="image/png" href="./public/images/logo.png" />
+    <link href="./public/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-base-200">
+    <div class="bg-success text-success-content text-center py-2 text-sm">
+      <p>🚚 Frete grátis em todos os pedidos acima de R$200! Por tempo limitado</p>
+    </div>
+
+    <div class="bg-base-100 border-b border-base-300">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-2 text-sm">
+          <div class="flex gap-4">
+            <a href="#" class="link link-hover">Entregas</a>
+            <a href="#" class="link link-hover">Devoluções e Garantia</a>
+            <a href="#" class="link link-hover">Contato</a>
+          </div>
+          <div>
+            <a href="login.html" class="link link-hover font-medium">Entrar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50 min-h-16">
+      <div class="container mx-auto px-4 flex items-center gap-4">
+        <div class="flex items-center gap-2">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-sm lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="produtos.html" class="text-error font-bold">PROMOÇÕES</a></li>
+              <li><a href="produtos.html">Medicamentos</a></li>
+              <li><a href="produtos.html">Dermocosméticos</a></li>
+              <li><a href="produtos.html">Outlet</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="avatar">
+              <div class="w-10 rounded-full">
+                <img src="./public/images/logo.png" alt="DevFarma Logo" />
+              </div>
+            </div>
+            <span class="font-bold text-xl text-success hidden sm:inline">DevFarma</span>
+          </a>
+        </div>
+
+        <ul class="menu menu-horizontal gap-1 hidden lg:flex flex-nowrap">
+          <li><a href="produtos.html" class="font-medium bg-success/10">Produtos</a></li>
+          <li><a href="produtos.html" class="font-bold text-error">PROMOÇÕES</a></li>
+          <li><a href="produtos.html">Medicamentos</a></li>
+          <li><a href="produtos.html">Dermocosméticos</a></li>
+          <li><a href="produtos.html">Outlet</a></li>
+        </ul>
+
+        <div class="flex-1"></div>
+
+        <div class="flex items-center gap-2">
+          <label class="input input-bordered input-sm flex items-center gap-2 w-40 lg:w-52 hidden md:flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" class="grow" placeholder="Buscar..." />
+          </label>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle btn-sm">
+              <div class="indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="badge badge-xs badge-success indicator-item">3</span>
+              </div>
+            </div>
+            <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-72 shadow-xl">
+              <div class="card-body">
+                <span class="text-lg font-bold">3 Itens</span>
+                <span class="text-success font-semibold">Subtotal: R$ 149,90</span>
+                <div class="card-actions">
+                  <a href="carrinho.html" class="btn btn-success btn-block btn-sm">Ver Carrinho</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="login.html" class="btn btn-ghost btn-circle btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-4">
+      <div class="text-sm breadcrumbs">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li>Medicamentos</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container mx-auto px-4 pb-12">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <aside class="lg:w-64 flex-shrink-0">
+          <div class="bg-base-100 rounded-lg shadow-lg p-6 sticky top-24">
+            <h3 class="font-bold text-lg mb-4">Filtros</h3>
+            
+            <div class="collapse collapse-arrow bg-base-200 mb-2">
+              <input type="checkbox" checked />
+              <div class="collapse-title font-medium">Categorias</div>
+              <div class="collapse-content">
+                <ul class="menu p-0">
+                  <li><a class="active">Medicamentos</a></li>
+                  <li><a>Dermocosméticos</a></li>
+                  <li><a>Vitaminas</a></li>
+                  <li><a>Higiene Pessoal</a></li>
+                  <li><a>Bebês e Crianças</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200 mb-2">
+              <input type="checkbox" checked />
+              <div class="collapse-title font-medium">Preço</div>
+              <div class="collapse-content">
+                <div class="form-control">
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">Até R$ 50</span>
+                  </label>
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">R$ 50 - R$ 100</span>
+                  </label>
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">R$ 100 - R$ 200</span>
+                  </label>
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">Acima de R$ 200</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200 mb-2">
+              <input type="checkbox" />
+              <div class="collapse-title font-medium">Marcas</div>
+              <div class="collapse-content">
+                <div class="form-control">
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">EMS</span>
+                  </label>
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">Medley</span>
+                  </label>
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">Eurofarma</span>
+                  </label>
+                  <label class="label cursor-pointer justify-start gap-2">
+                    <input type="checkbox" class="checkbox checkbox-success checkbox-sm" />
+                    <span class="label-text">Hypera</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="form-control">
+              <label class="label cursor-pointer justify-start gap-2">
+                <input type="checkbox" class="toggle toggle-success" />
+                <span class="label-text font-medium">Em Promoção</span>
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="label cursor-pointer justify-start gap-2">
+                <input type="checkbox" class="toggle toggle-success" />
+                <span class="label-text font-medium">Novidades</span>
+              </label>
+            </div>
+
+            <button class="btn btn-success btn-block mt-4">Aplicar Filtros</button>
+            <button class="btn btn-ghost btn-block mt-2">Limpar Filtros</button>
+          </div>
+        </aside>
+
+        <main class="flex-1">
+          <div class="bg-base-100 rounded-lg shadow-lg p-6 mb-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+              <div>
+                <h1 class="text-2xl font-bold">Medicamentos</h1>
+                <p class="text-base-content/70">Mostrando 12 de 28 produtos</p>
+              </div>
+              <div class="flex gap-2 flex-wrap">
+                <select class="select select-bordered w-full max-w-xs">
+                  <option disabled selected>Ordenar por</option>
+                  <option>Mais Relevantes</option>
+                  <option>Menor Preço</option>
+                  <option>Maior Preço</option>
+                  <option>Mais Vendidos</option>
+                  <option>Novidades</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex gap-2 mt-4 flex-wrap">
+              <span class="badge badge-success badge-lg gap-1">
+                Novidades
+                <button class="btn btn-ghost btn-xs btn-circle">✕</button>
+              </span>
+              <span class="badge badge-success badge-lg gap-1">
+                Promoções
+                <button class="btn btn-ghost btn-xs btn-circle">✕</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/vitaminac.jpg" alt="Vitamina C" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-success">Mais Vendido</div>
+                </div>
+                <h3 class="card-title">Vitamina C 1000mg</h3>
+                <p class="text-sm text-base-content/70">Suplemento vitamínico, 60 cápsulas</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 49,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/protetorsolar.jpg" alt="Protetor Solar" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-error">-20%</div>
+                </div>
+                <h3 class="card-title">Protetor Solar FPS 50</h3>
+                <p class="text-sm text-base-content/70">Proteção UVA/UVB, 200ml</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 79,90</span>
+                  <span class="text-sm line-through text-base-content/50">R$ 99,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/dipirona.jpeg" alt="Dipirona" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Dipirona 500mg</h3>
+                <p class="text-sm text-base-content/70">Analgésico e antitérmico, 20 comprimidos</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 12,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/shampoo.png" alt="Shampoo Anticaspa" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-warning">Novo</div>
+                </div>
+                <h3 class="card-title">Shampoo Anticaspa</h3>
+                <p class="text-sm text-base-content/70">Tratamento capilar, 400ml</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 34,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/omega3.webp" alt="Omega 3" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-warning">Novo</div>
+                </div>
+                <h3 class="card-title">Omega 3 1000mg</h3>
+                <p class="text-sm text-base-content/70">Óleo de peixe, 120 cápsulas</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 89,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/hidratante.jpeg" alt="Hidratante Corporal" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-error">-15%</div>
+                </div>
+                <h3 class="card-title">Hidratante Corporal</h3>
+                <p class="text-sm text-base-content/70">Pele seca, 400ml</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 38,90</span>
+                  <span class="text-sm line-through text-base-content/50">R$ 45,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/colageno.png" alt="Colágeno Hidrolisado" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Colágeno Hidrolisado</h3>
+                <p class="text-sm text-base-content/70">Sabor morango, 300g</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 79,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/serumfacialvitaminac.jpeg" alt="Sérum Facial" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-warning">Novo</div>
+                </div>
+                <h3 class="card-title">Sérum Facial Vitamina C</h3>
+                <p class="text-sm text-base-content/70">Clareador, 30ml</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 129,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/paracetamol.webp" alt="Paracetamol" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Paracetamol 750mg</h3>
+                <p class="text-sm text-base-content/70">Analgésico e antitérmico, 20 comprimidos</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 9,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/melatonina.jpg" alt="Melatonina" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-error">-30%</div>
+                </div>
+                <h3 class="card-title">Melatonina 3mg</h3>
+                <p class="text-sm text-base-content/70">Regulador do sono, 60 cápsulas</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 34,90</span>
+                  <span class="text-sm line-through text-base-content/50">R$ 49,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/cremedental.jpg" alt="Creme Dental" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title">Creme Dental Branqueador</h3>
+                <p class="text-sm text-base-content/70">Com flúor, 90g</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 14,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+              <figure class="px-4 pt-4 aspect-square">
+                <img src="./public/images/products/desodorante.jpeg" alt="Desodorante" class="rounded-xl w-full h-full object-contain bg-base-200" />
+              </figure>
+              <div class="card-body">
+                <div class="flex gap-2">
+                  <div class="badge badge-error">-25%</div>
+                </div>
+                <h3 class="card-title">Desodorante Roll-on</h3>
+                <p class="text-sm text-base-content/70">Proteção 48h, 50ml</p>
+                <div class="rating rating-sm">
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled />
+                  <input type="radio" class="mask mask-star-2 bg-warning" disabled checked />
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-2xl font-bold text-success">R$ 18,90</span>
+                  <span class="text-sm line-through text-base-content/50">R$ 24,90</span>
+                </div>
+                <div class="card-actions justify-end mt-2">
+                  <a href="produto.html" class="btn btn-success btn-block">Ver Produto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-8">
+            <div class="join">
+              <button class="join-item btn">«</button>
+              <button class="join-item btn btn-success">1</button>
+              <button class="join-item btn">2</button>
+              <button class="join-item btn">3</button>
+              <button class="join-item btn">»</button>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="btn btn-outline btn-success btn-wide">Mostrar Mais Produtos</button>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <footer class="bg-neutral text-neutral-content">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div class="avatar">
+                <div class="w-10 rounded-full">
+                  <img src="./public/images/logo.png" alt="DevFarma Logo" />
+                </div>
+              </div>
+              <span class="font-bold text-xl">DevFarma</span>
+            </div>
+            <p class="text-sm text-neutral-content/70">Sua farmácia online de confiança. Cuidando da sua saúde desde 2024.</p>
+          </div>
+          <div>
+            <h6 class="footer-title">Institucional</h6>
+            <a class="link link-hover block py-1">Sobre Nós</a>
+            <a class="link link-hover block py-1">Nossas Marcas</a>
+            <a class="link link-hover block py-1">Trabalhe Conosco</a>
+          </div>
+          <div>
+            <h6 class="footer-title">Ajuda</h6>
+            <a class="link link-hover block py-1">Suporte ao Cliente</a>
+            <a class="link link-hover block py-1">Fale Conosco</a>
+            <a class="link link-hover block py-1">Devoluções e Garantia</a>
+            <a class="link link-hover block py-1">Formas de Pagamento</a>
+            <a class="link link-hover block py-1">Entregas</a>
+          </div>
+          <div>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover block py-1">Termos de Serviço</a>
+            <a class="link link-hover block py-1">Política de Privacidade</a>
+            <a class="link link-hover block py-1">Cookies</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-neutral-content/10">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-neutral-content/70">© 2024 DevFarma. Todos os direitos reservados.</p>
+            <div class="flex items-center gap-2">
+              <span class="text-sm">📍 Brasil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

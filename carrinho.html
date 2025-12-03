@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras - DevFarma</title>
+    <link rel="icon" type="image/png" href="./public/images/logo.png" />
+    <link href="./public/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-base-200">
+    <div class="bg-success text-success-content text-center py-2 text-sm">
+      <p>🚚 Frete grátis em todos os pedidos acima de R$200! Por tempo limitado</p>
+    </div>
+
+    <div class="bg-base-100 border-b border-base-300">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-2 text-sm">
+          <div class="flex gap-4">
+            <a href="#" class="link link-hover">Entregas</a>
+            <a href="#" class="link link-hover">Devoluções e Garantia</a>
+            <a href="#" class="link link-hover">Contato</a>
+          </div>
+          <div>
+            <a href="login.html" class="link link-hover font-medium">Entrar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50 min-h-16">
+      <div class="container mx-auto px-4 flex items-center gap-4">
+        <div class="flex items-center gap-2">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-sm lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-lg">
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="produtos.html" class="text-error font-bold">PROMOÇÕES</a></li>
+              <li><a href="produtos.html">Medicamentos</a></li>
+              <li><a href="produtos.html">Dermocosméticos</a></li>
+              <li><a href="produtos.html">Outlet</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="avatar">
+              <div class="w-10 rounded-full">
+                <img src="./public/images/logo.png" alt="DevFarma Logo" />
+              </div>
+            </div>
+            <span class="font-bold text-xl text-success hidden sm:inline">DevFarma</span>
+          </a>
+        </div>
+
+        <ul class="menu menu-horizontal gap-1 hidden lg:flex flex-nowrap">
+          <li><a href="produtos.html" class="font-medium">Produtos</a></li>
+          <li><a href="produtos.html" class="font-bold text-error">PROMOÇÕES</a></li>
+          <li><a href="produtos.html">Medicamentos</a></li>
+          <li><a href="produtos.html">Dermocosméticos</a></li>
+          <li><a href="produtos.html">Outlet</a></li>
+        </ul>
+
+        <div class="flex-1"></div>
+
+        <div class="flex items-center gap-2">
+          <label class="input input-bordered input-sm flex items-center gap-2 w-40 lg:w-52 hidden md:flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" class="grow" placeholder="Buscar..." />
+          </label>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle btn-sm">
+              <div class="indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="badge badge-xs badge-success indicator-item">3</span>
+              </div>
+            </div>
+            <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-72 shadow-xl">
+              <div class="card-body">
+                <span class="text-lg font-bold">3 Itens</span>
+                <span class="text-success font-semibold">Subtotal: R$ 149,90</span>
+                <div class="card-actions">
+                  <a href="carrinho.html" class="btn btn-success btn-block btn-sm">Ver Carrinho</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="login.html" class="btn btn-ghost btn-circle btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-4">
+      <div class="text-sm breadcrumbs">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li>Carrinho de Compras</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container mx-auto px-4 pb-12">
+      <h1 class="text-3xl font-bold mb-8">Seu Carrinho</h1>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <div class="bg-base-100 rounded-lg shadow-xl overflow-hidden">
+            <div class="p-6 border-b border-base-300">
+              <h2 class="font-bold text-lg">Itens no Carrinho (3)</h2>
+            </div>
+
+            <div class="divide-y divide-base-300">
+              <div class="p-6 flex flex-col sm:flex-row gap-4">
+                <div class="w-full sm:w-32 h-32 bg-base-200 rounded-lg flex-shrink-0 p-2">
+                  <img src="./public/images/products/vitaminac.jpg" alt="Vitamina C" class="w-full h-full object-contain rounded-lg" />
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="font-bold text-lg">Vitamina C 1000mg</h3>
+                      <p class="text-sm text-base-content/70">Suplemento vitamínico, 60 cápsulas - Laranja</p>
+                      <p class="text-xs text-success mt-1">Envio em 2-4 dias úteis</p>
+                    </div>
+                    <button class="btn btn-ghost btn-sm btn-circle text-error">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="join">
+                      <button class="btn btn-sm join-item">-</button>
+                      <input type="text" value="2" class="input input-bordered input-sm join-item w-12 text-center" />
+                      <button class="btn btn-sm join-item">+</button>
+                    </div>
+                    <div class="text-right">
+                      <span class="text-xl font-bold text-success">R$ 99,80</span>
+                      <p class="text-sm text-base-content/50">R$ 49,90 cada</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6 flex flex-col sm:flex-row gap-4">
+                <div class="w-full sm:w-32 h-32 bg-base-200 rounded-lg flex-shrink-0 p-2">
+                  <img src="./public/images/products/protetorsolar.jpg" alt="Protetor Solar" class="w-full h-full object-contain rounded-lg" />
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="font-bold text-lg">Protetor Solar FPS 50</h3>
+                      <p class="text-sm text-base-content/70">Proteção UVA/UVB, 200ml</p>
+                      <p class="text-xs text-success mt-1">Envio em 2-4 dias úteis</p>
+                    </div>
+                    <button class="btn btn-ghost btn-sm btn-circle text-error">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="join">
+                      <button class="btn btn-sm join-item">-</button>
+                      <input type="text" value="1" class="input input-bordered input-sm join-item w-12 text-center" />
+                      <button class="btn btn-sm join-item">+</button>
+                    </div>
+                    <div class="text-right">
+                      <span class="text-xl font-bold text-success">R$ 79,90</span>
+                      <p class="text-sm text-base-content/50 line-through">R$ 99,90</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6 flex flex-col sm:flex-row gap-4">
+                <div class="w-full sm:w-32 h-32 bg-base-200 rounded-lg flex-shrink-0 p-2">
+                  <img src="./public/images/products/dipirona.jpeg" alt="Dipirona" class="w-full h-full object-contain rounded-lg" />
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="font-bold text-lg">Dipirona 500mg</h3>
+                      <p class="text-sm text-base-content/70">Analgésico e antitérmico, 20 comprimidos</p>
+                      <p class="text-xs text-success mt-1">Envio em 1-2 dias úteis</p>
+                    </div>
+                    <button class="btn btn-ghost btn-sm btn-circle text-error">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex justify-between items-center mt-4">
+                    <div class="join">
+                      <button class="btn btn-sm join-item">-</button>
+                      <input type="text" value="1" class="input input-bordered input-sm join-item w-12 text-center" />
+                      <button class="btn btn-sm join-item">+</button>
+                    </div>
+                    <div class="text-right">
+                      <span class="text-xl font-bold text-success">R$ 12,90</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 bg-base-200">
+              <a href="produtos.html" class="link link-success flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Continuar Comprando
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-1">
+          <div class="bg-base-100 rounded-lg shadow-xl p-6 sticky top-24">
+            <h2 class="font-bold text-lg mb-4">Resumo do Pedido</h2>
+            
+            <div class="space-y-3 mb-4">
+              <div class="flex justify-between">
+                <span class="text-base-content/70">Itens no carrinho</span>
+                <span class="font-medium">R$ 192,60</span>
+              </div>
+              <div class="flex justify-between text-success">
+                <span>Descontos aplicados</span>
+                <span class="font-medium">- R$ 20,00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-base-content/70">Frete</span>
+                <span class="font-medium text-success">Grátis</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-lg font-bold">Total</span>
+              <span class="text-2xl font-bold text-success">R$ 172,60</span>
+            </div>
+            <div class="alert alert-success mb-4 py-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-sm">Você economiza 10%!</span>
+            </div>
+
+            <div class="form-control mb-4">
+              <div class="join w-full">
+                <input type="text" placeholder="Código de desconto" class="input input-bordered join-item flex-1" />
+                <button class="btn btn-success join-item">Aplicar</button>
+              </div>
+            </div>
+
+            <a href="checkout.html" class="btn btn-success btn-lg btn-block mb-4">
+              IR PARA O CHECKOUT
+            </a>
+
+            <div class="space-y-2 text-sm text-base-content/70">
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Compra segura e criptografada</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Devolução grátis em até 30 dias</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Frete grátis acima de R$ 200</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Atendimento 24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-neutral text-neutral-content">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div class="avatar">
+                <div class="w-10 rounded-full">
+                  <img src="./public/images/logo.png" alt="DevFarma Logo" />
+                </div>
+              </div>
+              <span class="font-bold text-xl">DevFarma</span>
+            </div>
+            <p class="text-sm text-neutral-content/70">Sua farmácia online de confiança. Cuidando da sua saúde desde 2024.</p>
+          </div>
+          <div>
+            <h6 class="footer-title">Institucional</h6>
+            <a class="link link-hover block py-1">Sobre Nós</a>
+            <a class="link link-hover block py-1">Nossas Marcas</a>
+            <a class="link link-hover block py-1">Trabalhe Conosco</a>
+          </div>
+          <div>
+            <h6 class="footer-title">Ajuda</h6>
+            <a class="link link-hover block py-1">Suporte ao Cliente</a>
+            <a class="link link-hover block py-1">Fale Conosco</a>
+            <a class="link link-hover block py-1">Devoluções e Garantia</a>
+            <a class="link link-hover block py-1">Formas de Pagamento</a>
+            <a class="link link-hover block py-1">Entregas</a>
+          </div>
+          <div>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover block py-1">Termos de Serviço</a>
+            <a class="link link-hover block py-1">Política de Privacidade</a>
+            <a class="link link-hover block py-1">Cookies</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-neutral-content/10">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-neutral-content/70">© 2024 DevFarma. Todos os direitos reservados.</p>
+            <div class="flex items-center gap-2">
+              <span class="text-sm">📍 Brasil</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
