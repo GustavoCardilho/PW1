@@ -8,7 +8,9 @@
     "build:css": "npx @tailwindcss/cli -i app.css -o public/output.css",
     "watch:css": "npx @tailwindcss/cli -i app.css -o public/output.css --watch",
     "serve": "npx serve .",
-    "dev": "npx concurrently \"npm run watch:css\" \"npm run serve\""
+    "dev": "npx concurrently \"npm run watch:css\" \"npm run serve\"",
+    "build": "npx tailwindcss -i app.css -o public/output.css --minify",
+    "start": "npm run build && npm run serve"
   },
   "keywords": [],
   "author": "",
